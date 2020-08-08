@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TOP Google Homepage Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        body {
+            font-family: 'Open Sans', monospace;
+            background-color: #1e1e1e;
+            color: lightgray;
+            font-weight: 900;
+        }
+        
+        nav {
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            left: 0;
+            display: flex;
+            top: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            margin: 0 10px 0 10px;
+        }
+
+        li a {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            height: 80%;
+            align-self: center;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+
+        .logo {
+            position: relative;
+            top: 200px;
+        }
+
+        .search {
+            top: 200px;
+            position: relative;
+            display: flex;
+            justify-self: center;
+            justify-content: space-evenly;
+            align-items: center;
+            align-self: center;
+            border: 1px solid #dfe1e5;
+            border-radius: 25px;
+            width: 482px;
+            height: auto;
+            padding: 8px 0 8px 0;
+        }
+
+        img {
+            color: white;
+        }
+
+        #sign {
+            background-color: #4484F3;
+            color:black;
+            border: 1px solid silver;
+            font-size: 1em;
+            color: white;
+            width: 70px;
+        }
+
+        #srch {
+            width: 80%;
+            border: 0;
+            background-color: inherit;
+            color: white;
+            font-size: 1em;
+            font-weight: 800;
+        }
+
+        #magnifier {
+            max-height: 18px;
+            width: auto;
+        }
+
+        #mic {
+            max-height: 20px;
+            width: auto;
+        }
+
+        .bttns {
+            display: flex;
+            position: relative;
+            top: 220px;
+            width: 350px;
+            height: 50px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .srch-bttn {
+            border: 2px solid silver;
+            border-radius: 8px;
+            font-size: 1em;
+            color: lightgray;
+            background-color:inherit;
+            cursor: pointer;
+            font-weight: inherit;
+        }
+
+        footer {
+            position: absolute;
+            background-color: silver;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            height: 8vh;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+                <li style="margin-left: 65vw;"><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+            </ul>
+            <button id="sign">Sign in</button>
+        </nav>
+        <div class="main">
+            <div class="logo">
+                <a href="https://www.google.com" target="_blank"><img
+                        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                        alt="#"></a>
+            </div>
+        </div>
+
+        <div class="search">
+            <img src="/magnifier.png" alt="#" id="magnifier">
+            <input type="text" name="srch" id="srch">
+            <a href="#"><img src="/microphone-8-xxl.png" alt="#" id="mic"></a>
+        </div>
+        <div class="bttns">
+            <button class="srch-bttn">Google Search</button>
+            <button class="srch-bttn">I'm feeling lucky!</button>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search works</a></li>
+                <li><a href="#" style="margin-left: 50vw;">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+            </ul>
+        </footer>
+    </main>
+</body>
+
+</html>
