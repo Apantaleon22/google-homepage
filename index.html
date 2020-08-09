@@ -10,7 +10,6 @@
             font-family: 'Open Sans', monospace;
             background-color: #1e1e1e;
             color: lightgray;
-            font-weight: 900;
         }
         
         nav {
@@ -58,7 +57,7 @@
 
         .logo {
             position: relative;
-            top: 200px;
+            top: 160px;
         }
 
         .search {
@@ -71,7 +70,7 @@
             align-self: center;
             border: 1px solid #dfe1e5;
             border-radius: 25px;
-            width: 482px;
+            width: 600px;
             height: auto;
             padding: 8px 0 8px 0;
         }
@@ -91,11 +90,11 @@
 
         #srch {
             width: 80%;
+            height: 25px;
             border: 0;
             background-color: inherit;
             color: white;
             font-size: 1em;
-            font-weight: 800;
         }
 
         #magnifier {
@@ -112,30 +111,34 @@
             display: flex;
             position: relative;
             top: 220px;
-            width: 350px;
+            width: 500px;
             height: 50px;
             flex-direction: row;
             justify-content: space-between;
         }
 
         .srch-bttn {
-            border: 2px solid silver;
+            border: 1px solid silver;
             border-radius: 8px;
             font-size: 1em;
             color: lightgray;
             background-color:inherit;
             cursor: pointer;
-            font-weight: inherit;
+            width: 200px;
+            height: 30px;
         }
 
         footer {
             position: absolute;
+            display: flex;
+            flex-wrap: nowrap;
             background-color: silver;
             bottom: 0;
             width: 100%;
             left: 0;
             height: 8vh;
             color: black;
+            font-weight: normal;
         }
     </style>
 </head>
@@ -160,9 +163,9 @@
         </div>
 
         <div class="search">
-            <img src="/magnifier.png" alt="#" id="magnifier">
+            <img src="magnifier.png" alt="#" id="magnifier">
             <input type="text" name="srch" id="srch">
-            <a href="#"><img src="/microphone-8-xxl.png" alt="#" id="mic"></a>
+            <a href="#"><img src="microphone-8-xxl.png" alt="#" id="mic"></a>
         </div>
         <div class="bttns">
             <button class="srch-bttn">Google Search</button>
@@ -170,7 +173,7 @@
         </div>
         <footer>
             <ul>
-                <li><a href="#">About</a></li>
+                <li><a href="#">Advertising</a></li>
                 <li><a href="#">Business</a></li>
                 <li><a href="#">How Search works</a></li>
                 <li><a href="#" style="margin-left: 50vw;">Privacy</a></li>
